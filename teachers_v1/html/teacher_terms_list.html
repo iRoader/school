@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:100%">
+<head>
+	<meta charset="UTF-8">
+	<title>学生管理</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script>
+        window.teacher = {{ teacher }}
+    </script>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+	<div class="arrange">
+		<div class="listTime tabItem">
+			考试管理
+		</div>
+	</div>
+
+    <!-- {% verbatim %} -->
+	<div class="courseWrap" ng-app="tremApp" ng-controller="tremCtrl">
+		<div class="courseList" ng-repeat="term in terms">
+			<a href="/statistics/term/{{ term.id }}/">
+            <p class="title">{{term.grade}}年{{term.team}}班</p>
+			<span class="floL">{{term.name}}</span>
+			<span class="floR">{{term.time}}</span>
+            </a>
+		</div>
+	</div>
+    <!-- {% endverbatim %} -->
+
+	<div class="fixedBtnWrap">
+		<a class="btn btn-main" href="/teacher/create/term/?teacher={{ teacher }}">创建考试</a>
+	</div>
+
+    <script src="../js/angularJs/angular.min.js"></script>
+    <script type="text/javascript" src="../js/angularJs/angular-resource.min.js"></script>
+	<script src="../js/setRem.js"></script>
+	<script src="../js/controllers/teacher_create_trem_list.js"></script>
+    <script type="text/javascript" src="../js/service/teacher_request.js"></script>
+</body>
+</html>

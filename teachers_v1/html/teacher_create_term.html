@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>考试管理</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script>
+        window.teacher = {{ teacher }};
+    </script>
+
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/template.css">
+
+
+</head>
+<body >
+
+	<div class="arrange">
+		<div class="listTime tabItem">
+			创建考试
+		</div>
+	</div>
+
+    <!-- {% verbatim %} -->
+    <div ng-app="components" ng-controller="ngSelect">
+        <div class="examName">
+            考试名称:
+            <input ng-model="termData.name" type="text" name="exam" value="" placeholder="输入此次考试名">
+        </div>
+
+        <div class="examWrap" >
+            <div class="content">考试类型
+                <select class="examType" ng-model="termData.type" ng-options="o.id as o.name for o in examType.optionsData" ng-change="typeChange()">
+                    平时测验
+                </select>
+              <!-- <p ng-bind="demo"></p> -->
+            </div>
+
+            <div class="content">考试班级
+                <select class="examType" ng-model="termData.class" ng-options="o.id as o.class_name for o in examClass.optionsData" ng-change="classChange()">
+
+                </select>
+              <p ng-bind="classId"></p>
+            </div>
+        </div>
+
+        <div class="fixedBtnWrap">
+            <input type="button" class="btn btn-main" ng-click="addTerm($event)" value="确认添加">
+        </div>
+    </div>
+    <!-- {% endverbatim %} -->
+
+
+
+	<script src="../js/angularJS/angular.min.js"></script>
+    <script type="text/javascript" src="../js/angularJs/angular-resource.min.js"></script>
+	<script src="../js/setRem.js"></script>
+	<script src="../js/controllers/teacher_create_exam.js"></script>
+    <script type="text/javascript" src="../js/service/teacher_request.js"></script>
+
+</body>
+</html>

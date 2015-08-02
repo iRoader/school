@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/configure.css">
+	<link rel="stylesheet" href="../css/reset.css">
+
+</head>
+<body >
+	<div class="arrange">
+		<div class="listTime tabItem">
+			考试情况
+		</div>
+	</div>
+
+    <!-- {% verbatim %} -->
+    <div ng-app="examApp" ng-controller="examController" class="ScoreWrap">
+        <div class="tesWrap" ng-repeat="test in terms">
+                <div class="tesItem">
+                    <a href="#" class="testName floL">{{test.subject}}</a>
+                    <p class="testTime floR">{{test.score}}</p>
+                </div>
+        </div>
+    </div>
+    <!-- {% endverbatim %} -->
+    
+	</div>
+	    <div class="m-footer">
+	        <p class="ctn">由<a class="link" href="#">狠任性团队</a>提供技术支持</p>
+	</div>
+</body>
+
+
+<script src="../js/angular-1.3.10/angular.js"></script>
+<script type="text/javascript" src="../js/angular-1.3.10/angular-resource.min.js"></script>
+<script src="../js/setRem.js"></script>
+<script src="../js/controllers/students_score_show.js"></script>
+<script type="text/javascript" src="../js/service/students_request.js"></script>
+
+
+</html>

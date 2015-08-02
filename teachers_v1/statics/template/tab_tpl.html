@@ -1,0 +1,3 @@
+<div class="m-tab">
+    <div class="tabItem {{ 'tabItem' + config.count }}" ng-click="onTabChange($event,item,$index)" ng-class="{'z-active':$index==index}" ng-repeat="item in tabs">{{ item.name }}</div>
+</div>

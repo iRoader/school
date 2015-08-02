@@ -1,0 +1,254 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{	
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+	color: #FFF;
+}
+.k-homeTeachInfo{
+	background: url('../img/bg_head.png') no-repeat 0 0;
+	width: 100%;
+	height: 9.75rem;
+	background-size: 100% 100%;
+	/*font-size: 0;*/
+	padding-top: .9rem;
+	box-sizing: border-box;
+}
+.k-homeTeachInfo .imgWrap {
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 4.75rem;
+	height: 4.75rem;
+	border-radius: 50%;
+	border: 0.1rem solid rgba(0, 255, 255, 0.3);
+	text-align: center;
+}
+.k-homeTeachInfo .imgWrap .KiRoader{
+	display: inline-block;
+	vertical-align: middle;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	border: 0.1rem solid rgba(252, 255, 255, 0.4);
+	margin: 0.2rem;
+}
+
+.k-homeTeachInfo .nameWrap{
+	width: 5rem;
+	height: 1.25rem;
+	line-height: 1.25rem;
+	margin: 0.45rem auto 0 auto;
+	border-radius: 0.62rem;
+	background-color: rgba(0, 255, 255, 0.5);
+}
+.k-homeTeachInfo .nameWrap .name {
+  text-align: center;
+  color: #FFF;
+  font-size: 0.8rem;
+  font-family: "微软雅黑";
+}
+
+.k-homeTeachInfo .infoWrap{
+	margin: .75rem auto 0 auto;
+	width: 10.5rem;
+	height: .9rem;
+
+}
+.k-homeTeachInfo .infoWrap .info{
+	display: inline-block;
+	width: 4.8rem;
+	font-size: 0.65rem;
+	color: #FFF;
+	text-align: center;
+	border-right: 2px solid rgba(255, 255, 255, 0.4);
+	font-family: "微软雅黑";
+}
+.k-homeTeachInfo .infoWrap .info:last-child{
+	border: none;
+}
+
+/*funList*/
+.funList{
+	padding-top: 2.2rem;
+}
+.funList .list{
+	margin: 0 auto;
+	width: 13.2rem;
+}
+li{
+	list-style: none;
+}
+.funList .list .funItem{
+	float: left;
+	margin: 0 0 1.8rem 2.1rem;
+	width: 3rem;
+	height: 3.5rem;
+	text-align: center;
+}
+.funList .list .funItem:nth-child(3n+1){
+	margin-left: 0;
+}
+.funList .list .funItem .link{
+	display: block;
+}
+.funList .list .funItem .icon{
+	display: inline-block;
+	width: 2.15rem;
+	height: 2.15rem;
+}
+.funList .list .funItem .name{
+	padding-top: .4rem;
+	color: #666;
+	font-size: .75rem;
+}
+
+/*课程安排*/
+.infoClass{
+	/*position: absolute;*/
+	background: #F2F;
+	padding: 1.25rem 1rem 1rem 1.25rem;
+	border-bottom: 0.1rem solid #F2F2F2;
+	width: 100%;
+	height: 4rem;
+	font-size: .8rem;
+	color: #FFF;
+	font-family: "微软雅黑";
+}
+.infoClass .imgWrap{
+	width: 3.7rem;
+	height: 3.7rem;
+}
+.infoClass .imgWrap img{
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 50%;
+	border: 0.1rem solid #eee;
+}
+.floL{
+	float: left;
+	padding-left: .75rem;
+}
+.infoClass .infoWrap{
+	width: 10rem;
+	/*background: red;*/
+	padding-left: .8rem;
+	margin-right: 1.5rem;
+	margin-top: .5rem;
+}
+.floR{
+	float: right;
+	padding-right: .75rem;
+}
+
+.arrange{
+	width: 100%;
+	background: #0DB14B;
+	border-bottom: 0.15rem solid #0FF;
+}
+.arrange .listTime{
+	width: 8rem;
+	height: 1.7rem;
+	line-height: 1.7rem;
+	text-align: center;
+	margin: 0 auto;
+	color: #FFF;
+	font-size: .9rem
+}
+
+.courseWrap{
+	padding-bottom: 2rem;
+}
+.courseList{
+	height: 2.5rem;
+	padding: .5rem .6rem;
+	background-color: #fff;
+	border-bottom: .05rem solid #f3f3f3;
+	font-size: .75rem;
+	font-family: "微软雅黑";
+}
+.courseList .title{
+	margin-bottom: .5rem;
+	line-height: 1rem;
+	width: 70%;
+	box-sizing: border-box;
+	padding-left: .35rem;
+	font-size: .7rem;
+	color: #0db14b;
+	border-left: .2rem solid #0db14b;
+}
+.courseList ul{
+	margin: .75rem;
+	display: block;
+}
+
+.courseList .floL{
+	float: left;
+	padding-left: .75rem;
+}
+.courseList .floR{
+	float: right;
+	padding-right: .75rem;
+}
+
+.fixedBtnWrap{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: .25rem 1rem;
+	background-color: #f6f6f6;
+	margin-top: 3rem;
+	font-family: "微软雅黑";
+
+}
+.fixedBtnWrap .btn {
+	box-sizing: border-box;
+	width: 100%;
+	height: 2rem;
+	line-height: 2rem;
+	font-size: .8rem;
+}
+.fixedBtnWrap .btn-main {
+	display: inline-block;
+	padding: 0 1.1rem;
+	background-color: #0db14b;
+	color: #fff;
+	height: 1.65rem;
+	line-height: 1.65rem;
+	text-align: center;
+	border-radius: .15rem;
+}
+
+/*inform*/
+.contain{
+	/*background-color: #B3B3B3;*/
+	border-bottom: 1px solid #B3B3B3;
+	color: #B3B3B3;
+	font-family: "微软雅黑";
+	font-size: .75rem;
+	
+}
+.container .headFrom{
+	height: 1.75rem;
+	width: auto;
+	line-height: 1.75rem;
+	font-size: 0.75rem;
+	background-color: #62FDFD;
+	/*margin: .5rem 1rem;*/
+}
+.container .content{
+	height: 2.5rem;
+	width: 100%;
+	color: #B3B3B3;
+}
+.container .content a{
+	display: block;
+	line-height: 2.5rem;
+	text-align: center;
+	background-color: #F7A855;
+	letter-spacing: .15rem;
+}

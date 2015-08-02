@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的班级</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script>
+        window.class_id = "{{ class_id }}"
+    </script>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/resets.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/template.css">
+</head>
+<body>
+    <div class="arrange">
+		<div class="listTime tabItem">
+			班级成员
+		</div>
+	</div>
+
+    <!-- {% verbatim %} -->
+    <div ng-app="scoreInputApp" ng-controller="scoreInputController">
+        <div class="sname" ng-repeat="item in items" ng-click="goDetails($event, item)">
+            <p>{{ item.name }}</p>
+        </div>
+    </div>
+    <!-- {% endverbatim %} -->
+	</div>
+	    <div class="m-footer">
+	        <p class="ctn">由<a class="link" href="#">狠任性团队</a>提供技术支持</p>
+	</div>
+
+    <script src="../js/angularJS/angular.min.js"></script>
+    <script type="text/javascript" src="../js/angularJs/angular-resource.min.js"></script>
+	<script src="../js/setRem.js"></script>
+    <script src="../js/controllers/teacher_class_students.js"></script>
+    <script type="text/javascript" src="../js/service/teacher_request.js"></script>
+</body>
+</html>

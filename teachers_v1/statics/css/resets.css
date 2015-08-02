@@ -1,0 +1,82 @@
+.showText{
+	padding: 1rem;
+}
+.showText p{
+	font-size: .75rem;
+	font-family: "微软雅黑";
+}
+.myclass{
+	width: 100%;
+	height: 2.75rem;
+	line-height: 2.75rem;
+	text-align: center;
+	border-bottom: 1px solid #B3B3B3;
+}
+.nav{
+	width: 100%;
+	height: 1.75rem;
+	line-height: 1.75rem;
+	text-align: center;
+	display: inline-block;
+	border-bottom: 1px solid #B3B3B3;
+}
+.nav .tabItem{
+	width: 50%;
+	padding: 0;
+	/*background: red;*/
+}
+.nav a{
+	display: block;
+}
+.nav a:visited{
+	background: red;
+	border-bottom: 1px solid #32DBE7;
+}
+.nav a:active{
+	background: red;
+	border-bottom: 1px solid #32DBE7;
+}
+.starI{
+	display: block;
+	width: 100%;
+	height: 2rem;
+	margin-top: 4rem;
+}
+.starI a{
+	display: block;
+	width: 70%;
+	margin: 0 auto;
+	line-height: 2rem;
+	text-align: center;
+	background-color: #0DB14B; 
+	border-radius: 10px;
+}
+.score{
+	position: relative;
+	border-bottom: 1px solid #BFBFBF;
+	height: 2rem;
+}
+.score .label{
+	line-height: 2rem;
+	float: left;
+  	padding-left: .6rem;
+  	color: #999;
+  	font-size: .8rem;
+}
+.score .input {
+  position: absolute;
+  padding-right: 1.25rem;
+  box-sizing: border-box;
+  text-align: right;
+  width: 100%;
+  left: 0;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: 1.25rem;
+  border: none;
+  background-color: transparent;
+  color: #666;
+}
+.score .input .input-small{
+	width: 10.5rem;
+}

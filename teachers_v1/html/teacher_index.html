@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>学生管理</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script>
+        window.teacher = {{ id }}
+    </script>
+	<script src="../js/setRem.js"></script>
+	<script src="../js/controllers/controller.js"></script>
+
+	 <link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+	<!-- 个人信息部分开始 -->
+	<div class="k-homeTeachInfo">
+		<a href="#">
+			<div class="imgWrap">
+				<img class="KiRoader" src="../img/head1.png" alt="用户头像">
+			</div>
+		</a>
+		<a href="#">
+			<div class="nameWrap">
+				<p class="name">谢严坤</p>
+			</div>
+		</a>
+		<ul class="infoWrap">
+            <li class="info ">评 分: 10分</li>
+            <li class="info ">科 目: 心理学</li>
+        </ul>
+	</div>
+	<!-- 个人信息部分结束 -->
+
+	<!-- 主题功能部分 -->
+	<div class="funList">
+		<ul class="list ">
+			<li class="funItem">
+				<a href="" class="link">
+					<img class="icon" src="../img/day.png" alt="我的课程">
+					<p class="name">我的课程</p>
+				</a>
+			</li>
+			<li class="funItem">
+				<a href="/teacher/{{ id }}/classes/" class="link">
+					<img class="icon" src="../img/day.png" alt="我的课程">
+					<p class="name">我的班级</p>
+				</a>
+			</li>
+			<li class="funItem">
+				<a href="#" class="link">
+					<img class="icon" src="../img/day.png" alt="我的课程">
+					<p class="name">我的学生</p>
+				</a>
+			</li>
+			<li class="funItem">
+				<a href="/teacher/{{id}}/terms/" class="link">
+					<img class="icon" src="../img/day.png" alt="我的课程">
+					<p class="name">考试管理</p>
+				</a>
+			</li>
+			<li class="funItem">
+				<a href="#" class="link">
+					<img class="icon" src="../img/day.png" alt="我的课程">
+					<p class="name">作业管理</p>
+				</a>
+			</li>
+			<li class="funItem">
+				<a href="#" class="link">
+					<img class="icon" src="../img/day.png" alt="我的课程">
+					<p class="name">联系家长</p>
+				</a>
+			</li>
+			<li class="funItem">
+				<a href="/teacher/{{id}}/messages/" class="link">
+					<img class="icon" src="../img/day.png" alt="我的课程">
+					<p class="name">通知中心</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

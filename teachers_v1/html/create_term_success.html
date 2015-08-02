@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:100%">
+<head>
+	<meta charset="UTF-8">
+	<title>跳转页面</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script>
+        window.school_class = "{{ school_class }}";
+        window.term = "{{ term }}";
+    </script>
+
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/resets.css">
+</head>
+<body ng-app="recordGrade", ng-controller="recordController">
+
+	<div class="arrange">
+		<div class="listTime tabItem">
+			创建成功
+		</div>
+	</div>
+
+	<div class="starI">
+		<a href="/teacher/record/grade/?school_class={{school_class}}&term={{term}}" ng-click="record($event)">
+			开始录入成绩
+		</a>
+	</div>
+    <script src="../js/angularJS/angular.min.js"></script>
+	<script src="../js/setRem.js"></script>
+	<script src="../js/controllers/teacher_score_jump_app.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{	
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+	color: #FFF;
+}
+
+/*students_index.html*/
+.homeStudInfo{
+	background: url('../img/bg_head.png') no-repeat 0 0;
+	width: 100%;
+	height: 9.75rem;
+	background-size: 100% 100%;
+	font-size: 0;
+	padding-top: .9rem;
+	box-sizing: border-box;
+}
+.homeStudInfo .imgWrap {
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 4.75rem;
+	height: 4.75rem;
+	border-radius: 50%;
+	border: 0.1rem solid rgba(0, 255, 255, 0.3);
+	text-align: center;
+}
+.homeStudInfo .imgWrap .KiRoader{
+	display: inline-block;
+	vertical-align: middle;
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+	border: 0.1rem solid rgba(252, 255, 255, 0.4);
+	margin: 0.2rem;
+}
+
+.homeStudInfo .nameWrap{
+	width: 5rem;
+	height: 1.25rem;
+	line-height: 1.25rem;
+	margin: 0.45rem auto 0 auto;
+	border-radius: 0.62rem;
+	background-color: rgba(0, 255, 255, 0.5);
+}
+.homeStudInfo .nameWrap .name {
+  text-align: center;
+  color: #FFF;
+  font-size: 0.8rem;
+  font-family: "微软雅黑";
+}
+
+.homeStudInfo .infoWrap{
+	margin: 1rem 0 auto;
+	text-align: center;
+	width: 100%;
+	height: .9rem;
+
+}
+.homeStudInfo .infoWrap .info{
+	display: inline-block;
+	width: 5.7rem;
+	font-size: 0.65rem;
+	color: #FFF;
+	text-align: center;
+	border-right: 2px solid rgba(255, 255, 255, 0.4);
+	font-family: "微软雅黑";
+	padding-right: .75rem;
+}
+.homeStudInfo .infoWrap .info1{
+	width: 4rem;
+}
+.homeStudInfo .infoWrap .info:last-child{
+	border: none;
+}
+.funList{
+	padding-top: 2.2rem;
+}
+.funList .list{
+	margin: 0 auto;
+	width: 13.2rem;
+}
+li{
+	list-style: none;
+}
+.funList .list .funItem{
+	float: left;
+	margin: 0 0 1.8rem 2.1rem;
+	width: 3rem;
+	height: 3.5rem;
+	text-align: center;
+}
+.funList .list .funItem:nth-child(3n+1){
+	margin-left: 0;
+}
+.funList .list .funItem .link{
+	display: block;
+}
+.funList .list .funItem .icon{
+	display: inline-block;
+	width: 2.15rem;
+	height: 2.15rem;
+}
+.funList .list .funItem .name{
+	padding-top: .4rem;
+	color: #666;
+	font-size: .75rem;
+}
+
+/*students_score_show.html*/
+.arrange{
+	width: 100%;
+	background: #0DB14B;
+	border-bottom: 0.15rem solid #0FF;
+}
+.arrange .listTime{
+	width: 8rem;
+	height: 1.7rem;
+	line-height: 1.7rem;
+	text-align: center;
+	margin: 0 auto;
+	color: #FFF;
+	font-size: .9rem
+}
+.tesWrap{
+	width: 80%;
+	margin: 0 auto;
+	border-bottom: 2px solid  #B3B3B3;
+	background-color: #62FDFD;
+	
+	border-radius: .5rem;
+}
+.tesWrap .tesItem{
+	display: block;
+	width: 100%;
+	height: 2rem;
+	font-size: .75rem;
+	line-height: 2rem;
+	color: #999;
+	margin-top: .5rem;
+}
+.tesWrap a{
+	display: block;
+	width: 9rem;
+	color: #999;
+	font-weight: bold;
+}
+
+.showWrap{
+	width: 80%;
+	margin: 0 auto;
+	border-bottom: 3px solid  #999;
+	background-color: #B3B3B3;	
+	border-radius: .5rem;
+}
+.showWrap .showItem{
+	display: block;
+	width: 100%;
+	height: 2.5rem;
+	font-size: 1rem;
+	line-height: 2.5rem;
+	color: #FFF;
+	margin-top: .5rem;
+	font-size: block;
+}
+
+/*inform*/
+.contain{
+	/*background-color: #B3B3B3;*/
+	border-bottom: 1px solid #B3B3B3;
+	color: #B3B3B3;
+	font-family: "微软雅黑";
+	font-size: .75rem;
+	margin-top: .5rem;
+	
+}
+.container .headFrom{
+	height: 1.75rem;
+	width: auto;
+	line-height: 1.75rem;
+	font-size: 0.75rem;
+	background-color: #62FDFD;
+	/*margin: .5rem 1rem;*/
+}
+.container .content{
+	height: 2.5rem;
+	width: 100%;
+	color: #B3B3B3;
+}
+.container .content a{
+	display: block;
+	line-height: 2.5rem;
+	text-align: center;
+	background-color: #F7A855;
+	letter-spacing: .15rem;
+}
+.showText{
+	padding: 1rem;
+}
+.showText p{
+	font-size: .75rem;
+	font-family: "微软雅黑";
+}

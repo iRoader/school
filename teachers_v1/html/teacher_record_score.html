@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>录入分数</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script>
+        window.school_class = "{{ school_class }}"
+        window.term = "{{ term }}"
+    </script>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/resets.css">
+    <link rel="stylesheet" href="../css/template.css">
+</head>
+<body>
+	<div class="arrange">
+		<div class="listTime tabItem">
+			录入分数
+		</div>
+	</div>
+
+    <!-- {% verbatim %} -->
+    <div ng-app="scoreInputApp" ng-controller="scoreInputController">
+        <div class="score" ng-repeat="stu in students">
+            <label class="label" for="student">{{stu.username}}</label>
+            <input ng-model="stu.grade" type="text" value="{{stu.grade}}" class="input input-small" id="score">
+        </div>
+
+        <div class="fixedBtnWrap">
+            <input type="button" class="btn btn-main" ng-click="record($event)" value="提交">
+        </div>
+    </div>
+    <!-- {% endverbatim %} -->
+
+    <script src="../js/angularJS/angular.min.js"></script>
+    <script type="text/javascript" src="../js/angularJs/angular-resource.min.js"></script>
+	<script src="../js/setRem.js"></script>
+	<script src="../js/controllers/teacher_score_input_app.js"></script>
+    <script type="text/javascript" src="../js/service/teacher_request.js"></script>
+</body>
+</html>

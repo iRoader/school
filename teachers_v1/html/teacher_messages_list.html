@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>通知中心</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script>
+        window.teacher = "{{ teacher }}"
+    </script>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    
+</head>
+<body >
+
+<!-- {% verbatim %} -->
+    <div ng-app="informApp"  ng-controller="informController" ng-cloak>
+	<div class="container">
+		<div class="arrange">
+			<div class="listTime tabItem">
+				通知中心
+			</div>
+		</div>
+		<!-- 来源，时间 -->
+            <div class="contain" ng-repeat="msg in messages" ng-click="goDetails($event, msg)">
+                <div class="headFrom">
+                    <span class="from floL">{{msg.type}}</span>
+                    <span class="time floR">{{msg.created_time}}</span>
+                </div>
+
+                <!-- 通知内容部分 -->
+                <div class="content">
+                    <a href="/teacher/message/{{ msg.id }}/">{{msg.content}}</a>
+                </div>
+            </div>
+        </div>
+	</div>
+<!-- {% endverbatim %} -->
+    <div>
+        <div class="m-footer">
+            <p class="ctn">由<a class="link" href="#">狠任性团队</a>提供技术支持</p>
+        </div>
+    </div>
+
+    <script src="../js/angularJS/angular.min.js"></script>
+    <script type="text/javascript" src="../js/angularJs/angular-resource.min.js"></script>
+	<script src="../js/setRem.js"></script>
+	<script src="../js/controllers/teacher_inform_app.js"></script>
+    <script type="text/javascript" src="../js/service/teacher_request.js"></script>
+
+</body>
+
+</html>

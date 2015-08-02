@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size:100%">
+<head>
+	<meta charset="UTF-8">
+	<title>跳转页面</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script>
+        window.term = "{{ term }}"
+    </script>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/resets.css">
+	<link rel="stylesheet" href="../css/template.css">
+</head>
+<body>
+	<div class="arrange">
+		<div class="listTime tabItem">
+			创建成功
+		</div>
+	</div>
+	
+	<div class="scoreSucess">
+		<h2>分数录入完成</h2>
+
+		<div class="starI">
+			<a href="#" ng-click="">查看考试详情</a>
+		</div>
+		<div class="starI">
+			<a href="/teacher/index/" ng-click="">返回我的主页</a>
+		</div>
+	</div>
+    <script src="../js/angularJS/angular.min.js"></script>
+	<script src="../js/setRem.js"></script>
+	<script src="../js/controllers/teacher_record_score_jump_app.js"></script>
+</body>
+</html>

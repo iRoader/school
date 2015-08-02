@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的班级</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<script>
+        window.term = "{{ term }}";
+    </script>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/resets.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/template.css">
+
+</head>
+<body>
+	<div class="arrange">
+		<div class="listTime tabItem">
+			班级分数统计
+		</div>
+	</div>
+
+	<div class="scoreWarp">
+        <div class="statScore" ng-model="scores">
+			<ul>
+				<li>最高分:&nbsp100</li>
+				<li>平均分:&nbsp74</li>
+				<li>及格人数:&nbsp54</li>
+				<li>优秀人数:&nbsp18</li>
+				<li>班级总分:&nbsp999</li>
+			</ul>
+        </div>
+
+
+		<div class="arrange">
+			<div class="listTime tabItem">
+				班级分数排名=
+			</div>
+		</div>
+    </div>
+    <!-- {% verbatim %} -->
+    <div ng-app="scoreApp" ng-controller="scoreController" ng-cloak>
+		<div class="scoresWrap">
+			<div class="termDetail" ng-repeat="stu in students">
+				<div class="termItem">
+					<p class="testName floL">{{stu.name}}</p>
+					<p class="testTime floR">{{stu.grade}}</p>
+				</div>
+			</div>
+		</div>
+    </div>
+    <!-- {% endverbatim %} -->
+</body>
+
+<script src="../js/angularJS/angular.min.js"></script>
+<script type="text/javascript" src="../js/angularJs/angular-resource.min.js"></script>
+<script src="../js/setRem.js"></script>
+<script src="../js/controllers/teacher_term_statistics.js"></script>
+<script type="text/javascript" src="../js/service/teacher_request.js"></script>
+</html>

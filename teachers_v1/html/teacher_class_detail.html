@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="courseApp">
+<head>
+	<meta charset="UTF-8">
+	<title>我的班级</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/resets.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/template.css">
+
+</head>
+
+<body>
+	<div class="arrange">
+		<div class="listTime tabItem">
+			班级详情
+		</div>
+	</div>
+
+	<div class="test">
+		<p><a href="/teacher/class/{{school_class}}/term/filter/?type=0">平时测验</a></p>
+    </div>
+    <div class="test">
+        <p><a href="/teacher/class/{{school_class}}/term/filter/?type=1">期中考试</a></p>
+    </div>
+    <div class="test">
+        <p><a href="/teacher/class/{{school_class}}/term/filter/?type=2">期末考试</a></p>
+	</div>
+
+	<div class="fixedBtnWrap">
+		<a class="btn btn-main" href="/teacher/class/{{ school_class }}/students/" ng-click="">班级成员</a>
+	</div>
+
+
+	<script src="../js/angularJS/angular.min.js"></script>
+	<script src="../js/setRem.js"></script>
+
+</body>
+</html>

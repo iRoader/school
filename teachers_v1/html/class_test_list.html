@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+	<meta charset="UTF-8">
+	<title>{{ title }}</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script>
+        window.school_class = "{{ school_class }}";
+        window.type = "{{ type }}";
+    </script>
+
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/resets.css">
+	<link rel="stylesheet" href="../css/footer.css">
+	<link rel="stylesheet" href="../css/template.css">
+
+</head>
+<body >
+	<div class="arrange">
+		<div class="listTime tabItem">
+			{{ title }}
+		</div>
+	</div>
+
+    <!-- {% verbatim %} -->
+    <div ng-app="examApp" ng-controller="examController" ng-cloak>
+        <div class="tesWrap" ng-repeat="test in terms">
+
+                <div class="tesItem">
+                    <p class="testName floL">{{test.name}}</p>
+                    <p class="testTime floR">{{test.time}}</p>
+                </div>
+                <a href="/statistics/term/{{ test.id }}/">{{test.subject}}</a>
+
+        </div>
+    </div>
+    <!-- {% endverbatim %} -->
+    
+	</div>
+	    <div class="m-footer">
+	        <p class="ctn">由<a class="link" href="#">狠任性团队</a>提供技术支持</p>
+	</div>
+</body>
+
+<script src="../js/angularJS/angular.min.js"></script>
+<script type="text/javascript" src="../js/angularJs/angular-resource.min.js"></script>
+<script src="../js/setRem.js"></script>
+<script src="../js/controllers/teacher_class_terms.js"></script>
+<script type="text/javascript" src="../js/service/teacher_request.js"></script>
+
+
+</html>

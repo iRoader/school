@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的班级</title>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <script>
+        window.teacher = "{{ teacher }}"
+    </script>
+	<link rel="stylesheet" href="../static/css/index.css">
+	<link rel="stylesheet" href="../static/css/resets.css">
+	<link rel="stylesheet" href="../static/css/footer.css">
+</head>
+<body>
+	<div class="arrange">
+		<div class="listTime tabItem">
+			我的班级
+		</div>
+	</div>
+
+    <!-- {% verbatim %} -->
+    <div ng-app="classApp" ng-controller="classController" ng-cloak>
+        <div class="myclass" ng-repeat="name in classes">
+            <a href="/teacher/class/{{ name.id }}/detail/">{{ name.class_name }}</a>
+        </div>
+    </div>
+	</div>
+    <!-- {% endverbatim %} -->
+
+    <div class="m-footer">
+        <p class="ctn">由<a class="link" href="#">狠任性团队</a>提供技术支持</p>
+    </div>
+    
+    <script src="../static/js/angularJS/angular.min.js"></script>
+    <script type="text/javascript" src="../static/js/angularJs/angular-resource.min.js"></script>
+	<script src="../static/js/setRem.js"></script>
+	<script src="../static/js/controllers/teacher_class_all_app.js"></script>
+    <script type="text/javascript" src="../static/js/service/teacher_request.js"></script>
+</body>
+
+</html>
